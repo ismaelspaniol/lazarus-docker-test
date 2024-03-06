@@ -1,0 +1,10 @@
+version: '3.8'
+services:
+  horse:
+    build:
+      dockerfile: Dockerfile
+    container_name: horse
+    volumes:
+      - ./horse:/usr/sbin/
+    ports:
+      - "9000:9000"
